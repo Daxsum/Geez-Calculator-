@@ -1,3 +1,7 @@
+.back{
+    background-color: rgb(53, 75, 75);
+    margin: 0;
+}
 .GeezCalculator{
     text-align: center;
     background-color: rgb(1, 1, 1);
@@ -45,5 +49,26 @@
 }
 #button {
 font-size: large;
+font-family: 'Courier New', Courier, monospace;
+}
+#sum {
+    
+        font-size: xx-large;
+        font-family: 'Courier New', Courier, monospace;
+       width: 200px;
+       margin-left: 60%;
+       margin-bottom: 10px;
+       background-color: blue;
+       color: aliceblue;
+}
+
+.priviousOperand{
+    text-align: end;
+    font-size: 50px;
+font-family: 'Courier New', Courier, monospace;
+}
+.cerrentOperand{
+    text-align: end;
+    font-size: 50px;
 font-family: 'Courier New', Courier, monospace;
 }
