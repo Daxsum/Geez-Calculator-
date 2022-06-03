@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.GeezCalculator{
+    text-align: center;
+    background-color: rgb(1, 1, 1);
+    width: 50%;
+    margin-top: 30PX;
+    margin-left: 24%;
+  
+ 
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navBar{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.AC{
+    width: 70px;
+    padding: 15px;
+    margin: 50px;
+    background-color: red;
+}
+.outPut{
+    background-color: rgb(208, 202, 202);
+    margin: 15px;
+    width: 450PX;
+}
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5px;
+    gap: 2px;
+    padding: 3px;
+}
+.numPad{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    /* background-color: rgb(24, 235, 161); */
+}
+.oprators{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    /* background-color: rgb(34, 34, 192); */
+}
+#button {
+font-size: large;
+font-family: 'Courier New', Courier, monospace;
 }
