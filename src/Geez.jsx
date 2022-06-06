@@ -1,426 +1,229 @@
-import React, { Component ,useState} from 'react';
+import React, { Component ,useEffect,useState} from 'react';
 import './index.css'
+import {GeezNumber,Calculator,GeezEngine} from './geez-number'
 
 function Geez (){
     const [operand,setOperand]=useState("");
     const [operand2,setOperand2]=useState("");
-    const [array,setArray]=useState([]);
-
-
-function screen (value){
-    if (operand.length===0){
-        setOperand(value);
-     
-        console.log(operand)  
-    }else if (operand2.length===0){
-        setOperand2(value);
+    const[operand3,setOperand3]=useState("");
+    const array=[];
     
-        console.log(operand2)  
-    }else{
-        setOperand2(operand2+value);
-
-        console.log(operand2)  
+    
+    
+    function screen (value){
+        if (operand.length===0){
+            setOperand(value);
+            
+           console.log(operand)  
+        }else if (operand2.length===0){
+            setOperand2(value);
+    
+            console.log(operand2)  
+        }else if (operand3.length===0){
+            setOperand3(value);
+        console.log(operand3)  
+    }
+    else{
+        setOperand3(operand3+value);
+        
+        console.log(operand3)  
     }
 }
     
-    function add (num){
 
-        // push(num)
-        setArray((state)=>{
-            state.push(num)
-              return state
-          })
-          console.log(array)
-        if (num===1){
-            screen("፩")
+
+
+
+function a (num){
+    array.push(num)
+    console.log(array)
+   
+}
+function add (num){
+    
+    if (num===1){
+        screen("፩")
+        
+    }
+    else if (num==2){
             
+            screen('፪')       
             
-        }
-        else if (num==2){
-            
-            if (operand.length==0){
-                setOperand("፪");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፪");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፪");
-                console.log(operand2)  
-            }
-         
-           
-            
-         
         }
         else if (num==3){
-
-           
-            if (operand.length==0){
-                setOperand("፫");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፫");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፫");
-                console.log(operand2)  
-            }  
+            
+            
+            screen('፫')
         }
         else if (num==4){
 
-            if (operand.length==0){
-                setOperand("፬");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፬");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፬");
-                console.log(operand2)  
-            }  
-         
+            
+            
+            screen('፬')
         }
         else if (num==5){
-
-
-            if (operand.length==0){
-                setOperand("፭");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፭");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፭");
-                console.log(operand2)  
-            }  
+            
+            screen('፭')
+            
             
         }
         else if (num==6){
-
-            if (operand.length==0){
-                setOperand("፮");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፮");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፮");
-                console.log(operand2)  
-            }  
-  
+            screen('፮')
+            
+            
         }
         else if (num==7){
-
-            if (operand.length==0){
-                setOperand("፯");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፯");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፯");
-                console.log(operand2)  
-            }  
-
+            screen('፯')
+            
             
         }
         else if (num==8){
-
-            if (operand.length==0){
-                setOperand("፰");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፰");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፰");
-                console.log(operand2)  
-            }  
+            screen('፰')
+            
 
         }
         else if (num==9){
-
-            if (operand.length==0){
-                setOperand("፱");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፱");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፱");
-                console.log(operand2)  
-            }  
+            screen('፱')
+            
 
 
                
         }
         else if (num==10){
-            if (operand.length==0){
-                setOperand("፲");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፲");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፲");
-                console.log(operand2)  
-            }  
-
-
-               
+            screen('፲')
+            
+            
+            
         }
         else if (num==20){
-            if (operand.length==0){
-                setOperand("፳");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፳");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፳");
-                console.log(operand2)  
-            } 
-
-           
+            screen('፳')
+            
+            
+            
         }
         else if (num==30){
-
-            if (operand.length==0){
-                setOperand("፴");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፴");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፴");
-                console.log(operand2)  
-            } 
-
-             
+            
+            screen('፴')
+         
         }
         else if (num==40){
-
-            if (operand.length==0){
-                setOperand("፵");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፵");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፵");
-                console.log(operand2)  
-            } 
-
+            screen('፵')
+            
+            
         }
         else if (num==50){
-
-            if (operand.length==0){
-                setOperand("፶");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፶");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፶");
-                console.log(operand2)  
-            } 
-
-
-              
+            screen('፶')
+           
+            
+            
         }
         else if (num==60){
-
-            if (operand.length==0){
-                setOperand("፷");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፷");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፷");
-                console.log(operand2)  
-            } 
-
-
-              
+            screen('፷')
+           
         }
         else if (num==70){
-            if (operand.length==0){
-                setOperand("፸");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፸");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፸");
-                console.log(operand2)  
-            } 
-            
+            screen('፸')
+           
         }
         else if (num==80){
-            if (operand.length==0){
-                setOperand("፹");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፹");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፹");
-                console.log(operand2)  
-            } 
-
-            
+            screen('፹')
         }
         else if (num==90){
-
-            if (operand.length==0){
-                setOperand("፺");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፺");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፺");
-                console.log(operand2)  
-            } 
-
-            
+            screen('፺')
+           
         }
         else if (num==100){
-
-            if (operand.length==0){
-                setOperand("፻");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፻");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፻");
-                console.log(operand2)  
-            } 
-
-
+            screen('፻')
+         
         }
         else if (num==1000){
 
-
-            if (operand.length==0){
-                setOperand("፲፻");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("፲፻");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"፲፻");
-                console.log(operand2)  
-            } 
+            screen('፲፻')
+           
           
         }
         else if (num=="+"){
-            if (operand.length==0){
-                setOperand("+");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("+");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"+");
-                console.log(operand2)  
-            } 
+            screen('+')
+           
            
         }
         else if (num=="-"){
-
-            if (operand.length==0){
-                setOperand("-");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("-");
-                console.log(operand2)  
-            }else{
-                setOperand2(operand2+"-");
-                console.log(operand2)  
-            } 
+            screen('-')
+            
         
         }
         else if (num=="x"){
+            screen('x')
             
-            if (operand.length==0){
-                setOperand("x");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("x");
-                console.log(operand2)  
-            }else{
-            
-                setOperand2(operand2+"x");
-                console.log(operand2)  
-            } 
-          
         }
         else if (num=="/"){
-            if (operand.length==0){
-                setOperand("/");
-                console.log(operand)  
-            }else if (operand2.length==0){
-                setOperand2("/");
-                console.log(operand2)  
-            }else{
-            setOperand("/");
-                setOperand2(operand2+"/");
-                console.log(operand2)  
-            } 
-       
+            screen('/')
+           
         }
-    
+        
         
     }
- function reset (){
-     setOperand('')
-     setOperand2('')
- }
+    function reset (){
+        setOperand('')
+        setOperand2('')
+        setOperand3('')
+    }
+    let prev=0
+    let next=0
+    const arrayGEEZ=['፩','፪','፫','፬','፭','፮','፯','፰','፱','፲','፲፩','፲፪','፲፫','፲፬','፲፭','፲፮','፲፯','፲፰','፲፱','፳','፳፩','፳፪','፳፫','፳፬','፳፭','፳፮','፳፯','፳፰','፳፱','፴','፴፩','፴፪','፴፫','፴፬','፴፭','፴፮','፴፯','፴፰','፴፱','፵','፵፩','፵፪','፵፫','፵፬','፵፭','፵፮','፵፯','፵፰','፵፱','፶','፶፩','፶፪','፶፫','፶፬','፶፭','፶፮','፶፯','፶፰','፶፱'
+    ,'፷','፷፩','፷፪','፷፫']
+    
+    const arrayAREBIC=[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99,100];     
+    function evaluate (){
+        let index=arrayGEEZ.indexOf(operand);
+        let index2=arrayGEEZ.indexOf(operand3);
+      
+        // let prev=arrayAREBIC[index]
+        // let next=arrayAREBIC[index2]
+        // console.log(prev)
+        // console.log(next)
+        
+        var prev = new GeezNumber(arrayAREBIC[index]);
+        var next = new GeezNumber(arrayAREBIC[index2]);
+            // console.log(Calculator.add(hundred, thousand).toArabic());
+            // console.log(Calculator.add(hundred, thousand).toGeez());
+           
+        let computation="";
+        switch (operand2){
+            case '+':
 
- const One =()=>{add(1)};
- const Two =()=>{add(2)};
- const three =()=>{add(3)};
- const Four =()=>{add(4)};
- const Five =()=>{add(5)};
- const Six =()=>{add(6)};
- const Seven =()=>{add(7)};
- const Eight =()=>{add(8)};
- const Nine =()=>{add(9)};
- const Ten =()=>{add(10)};
- const Twenty =()=>{add(20)};
- const Therty =()=>{add(30)};
- const Forty =()=>{add(40)};
- const Fifty =()=>{add(50)};
- const Sixsty =()=>{add(60)};
- const Seventy =()=>{add(70)};
- const Eighty =()=>{add(80)};
- const Ninty =()=>{add(90)};
- const OneHundred =()=>{add(100)};
- const OneTowsend =()=>{add(1000)};
- const Plus =()=>{add("+")};
- const Minus =()=>{add("-")};
- const Multiplication =()=>{add("x")};
- const Deviding =()=>{add("/")};
-//  const Sum=()=>{calculation(A)};
- 
-//  function push(i){
-//      setArray((state)=>{
-//        state.push(i)
-//          return state
-//      })
-   
- 
-//     console.log(array);
- 
-//   }
+            computation=Calculator.add(prev, next).toGeez();
+            console.log(computation)
+            break;
+        case '-':
+
+           
+            computation=Calculator.subtract(prev, next).toGeez();
+            break;
+        case 'x':
+
+            
+            computation=Calculator.multiply(prev, next).toGeez();
+            break;
+        case '/':
+
+            
+            computation=Calculator.divide(prev, next).toGeez();
+            break;
+
+    }
+    console.log(computation)
+    reset()
+    setOperand(computation)
+}
+
+
+
 
 
     return (
-        <div className='back'>
+
+
 
 <div className='GeezCalculator'>
         <div className='navBar'>
@@ -428,44 +231,45 @@ function screen (value){
             <div className='outPut'>
                 <div className='priviousOperand'>{operand}</div>
                 <div className='cerrentOperand'>{operand2}</div>
+                <div className='cerrentOperand'>{operand3}</div>
             </div>
         </div>
         <div className='body'>
 
         <div className='numPad'>
 
-            <button onClick={One} id='button' className='1'>፩</button>
-            <button onClick={Two} id='button' className='2'>፪</button>
-            <button onClick={three} id='button' className='3'>፫</button>
-            <button onClick={Four} id='button' className='4'>፬</button>
-            <button onClick={Five} id='button' className='5'>፭</button>
-            <button onClick={Six} id='button' className='6'>፮</button>
-            <button onClick={Seven} id='button' className='7'>፯</button>
-            <button onClick={Eight} id='button' className='8'>፰</button>
-            <button onClick={Nine} id='button' className='9'>፱</button>
+            <button onClick={()=>{add(1)}} id='button' className='1'>፩</button>
+            <button onClick={()=>{add(2)}} id='button' className='2'>፪</button>
+            <button onClick={()=>{add(3)}} id='button' className='3'>፫</button>
+            <button onClick={()=>{add(4)}} id='button' className='4'>፬</button>
+            <button onClick={()=>{add(5)}} id='button' className='5'>፭</button>
+            <button onClick={()=>{add(6)}} id='button' className='6'>፮</button>
+            <button onClick={()=>{add(7)}} id='button' className='7'>፯</button>
+            <button onClick={()=>{add(8)}} id='button' className='8'>፰</button>
+            <button onClick={()=>{add(9)}} id='button' className='9'>፱</button>
         </div>
         <div className='oprators'>
-            <button onClick={Ten} id='button' className='10'>፲</button>
-            <button onClick={Twenty} id='button' className='20'>፳</button>
-            <button onClick={Therty} id='button' className='30'>፴</button>
-            <button onClick={Forty} id='button' className='40'>፵</button>
-            <button onClick={Fifty} id='button' className='50'>፶</button>
-            <button onClick={Sixsty} id='button' className='60'>፷</button>
-            <button onClick={Seventy} id='button' className='70'>፸</button>
-            <button onClick={Eighty} id='button' className='80'>፹</button>
-            <button onClick={Ninty} id='button' className='90'>፺</button>
-            <button onClick={OneHundred} id='button' className='100'>፻</button>
-            <button onClick={OneTowsend} id='button' className='1000'>፲፻</button>
-            <button onClick={Plus} id='button' className='+'>+</button>
-            <button onClick={Minus} id='button' className='-'>-</button>
-            <button onClick={Multiplication} id='button' className='x'>x</button>
-            <button onClick={Deviding} id='button' className='/'>/</button>
+            <button onClick={()=>{add(10)}} id='button' className='10'>፲</button>
+            <button onClick={()=>{add(20)}} id='button' className='20'>፳</button>
+            <button onClick={()=>{add(30)}} id='button' className='30'>፴</button>
+            <button onClick={()=>{add(40)}} id='button' className='40'>፵</button>
+            <button onClick={()=>{add(50)}} id='button' className='50'>፶</button>
+            <button onClick={()=>{add(60)}} id='button' className='60'>፷</button>
+            <button onClick={()=>{add(70)}} id='button' className='70'>፸</button>
+            <button onClick={()=>{add(80)}} id='button' className='80'>፹</button>
+            <button onClick={()=>{add(90)}} id='button' className='90'>፺</button>
+            <button onClick={()=>{add(100)}} id='button' className='100'>፻</button>
+            <button onClick={()=>{add(1000)}} id='button' className='1000'>፲፻</button>
+            <button onClick={()=>{add("+")}} id='button' className='+'>+</button>
+            <button onClick={()=>{add("-")}} id='button' className='-'>-</button>
+            <button onClick={()=>{add("x")}} id='button' className='x'>x</button>
+            <button onClick={()=>{add("/")}} id='button' className='/'>/</button>
         </div>
-            <button onClick={Deviding} id='sum' className='/'>=</button>
+            <button onClick={evaluate} id='sum' className='/'>=</button>
         </div>
 
      </div>
-        </div>
+     
     );
 }
  
