@@ -9,18 +9,18 @@ const A = [];
 function add (num){
  push(num)
     if (num===1){
-        // if (operand.length===0){
-        //     setOperand("1");
+        if (operand.length===0){
+            setOperand("1");
          
            
-        // }else if (operand2.length===0){
-        //     setOperand2("1");
+        }else if (operand2.length===0){
+            setOperand2("1");
         
-        // }else{
-        //     setOperand2(operand2+"1");
+        }else{
+            setOperand2(operand2+"1");
    
           
-        // }
+        }
         
 
     }}
