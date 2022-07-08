@@ -224,51 +224,71 @@ function add (num){
     return (
 
 
+<div className='bg'>
+<nav className="navbar_navbar-light_bg-light" >
+  <div className="container-fluid">
+    <span className="navbar-text">
+      GEEZ Calculator
+    </span>
+  </div>
+</nav>
 
-<div className='GeezCalculator'>
+    <div id='GeezCalculator' className='badge rectangle-pill bg-Secondary'>
+    
         <div className='navBar'>
-            <button onClick={reset} className='AC'>AC</button>
+            
+            <button onClick={reset} id="AC" className='Abadge rounded-pill bg-danger'>AC</button>
             <div className='outPut'>
                 <div className='priviousOperand'>{operand}</div>
                 <div className='cerrentOperand'>{operand2}</div>
                 <div className='cerrentOperand'>{operand3}</div>
             </div>
+            
         </div>
         <div className='body'>
 
         <div className='numPad'>
 
-            <button onClick={()=>{add(1)}} id='button' className='1'>፩</button>
-            <button onClick={()=>{add(2)}} id='button' className='2'>፪</button>
-            <button onClick={()=>{add(3)}} id='button' className='3'>፫</button>
-            <button onClick={()=>{add(4)}} id='button' className='4'>፬</button>
-            <button onClick={()=>{add(5)}} id='button' className='5'>፭</button>
-            <button onClick={()=>{add(6)}} id='button' className='6'>፮</button>
-            <button onClick={()=>{add(7)}} id='button' className='7'>፯</button>
-            <button onClick={()=>{add(8)}} id='button' className='8'>፰</button>
-            <button onClick={()=>{add(9)}} id='button' className='9'>፱</button>
+            <button onClick={()=>{add(1)}} id='button' className='badge rounded-pill bg-primary'>፩</button>
+            <button onClick={()=>{add(2)}} id='button' className='badge rounded-pill bg-primary'>፪</button>
+            <button onClick={()=>{add(3)}} id='button' className='badge rounded-pill bg-primary'>፫</button>
+            <button onClick={()=>{add(4)}} id='button' className='badge rounded-pill bg-primary'>፬</button>
+            <button onClick={()=>{add(5)}} id='button' className='badge rounded-pill bg-primary'>፭</button>
+            <button onClick={()=>{add(6)}} id='button' className='badge rounded-pill bg-primary'>፮</button>
+            <button onClick={()=>{add(7)}} id='button' className='badge rounded-pill bg-primary'>፯</button>
+            <button onClick={()=>{add(8)}} id='button' className='badge rounded-pill bg-primary'>፰</button>
+            <button onClick={()=>{add(9)}} id='button' className='badge rounded-pill bg-primary'>፱</button>
         </div>
         <div className='oprators'>
-            <button onClick={()=>{add(10)}} id='button' className='10'>፲</button>
-            <button onClick={()=>{add(20)}} id='button' className='20'>፳</button>
-            <button onClick={()=>{add(30)}} id='button' className='30'>፴</button>
-            <button onClick={()=>{add(40)}} id='button' className='40'>፵</button>
-            <button onClick={()=>{add(50)}} id='button' className='50'>፶</button>
-            <button onClick={()=>{add(60)}} id='button' className='60'>፷</button>
-            <button onClick={()=>{add(70)}} id='button' className='70'>፸</button>
-            <button onClick={()=>{add(80)}} id='button' className='80'>፹</button>
-            <button onClick={()=>{add(90)}} id='button' className='90'>፺</button>
-            <button onClick={()=>{add(100)}} id='button' className='100'>፻</button>
-            <button onClick={()=>{add(1000)}} id='button' className='1000'>፲፻</button>
-            <button onClick={()=>{add("+")}} id='button' className='+'>+</button>
-            <button onClick={()=>{add("-")}} id='button' className='-'>-</button>
-            <button onClick={()=>{add("x")}} id='button' className='x'>x</button>
-            <button onClick={()=>{add("/")}} id='button' className='/'>/</button>
+            <button onClick={()=>{add(10)}} id='button' className='badge rounded-pill bg-warning'>፲</button>
+            <button onClick={()=>{add(20)}} id='button' className='badge rounded-pill bg-warning'>፳</button>
+            <button onClick={()=>{add(30)}} id='button' className='badge rounded-pill bg-warning'>፴</button>
+            <button onClick={()=>{add(40)}} id='button' className='badge rounded-pill bg-warning'>፵</button>
+            <button onClick={()=>{add(50)}} id='button' className='badge rounded-pill bg-warning'>፶</button>
+            <button onClick={()=>{add(60)}} id='button' className='badge rounded-pill bg-warning'>፷</button>
+            <button onClick={()=>{add(70)}} id='button' className='badge rounded-pill bg-warning'>፸</button>
+            <button onClick={()=>{add(80)}} id='button' className='badge rounded-pill bg-warning'>፹</button>
+            <button onClick={()=>{add(90)}} id='button' className='badge rounded-pill bg-warning'>፺</button>
+            <button onClick={()=>{add(100)}} id='button' className='badge rounded-pill bg-warning'>፻</button>
+            <button onClick={()=>{add(1000)}} id='button' className='badge rounded-pill bg-warning'>፲፻</button>
+            <button onClick={()=>{add("+")}} id='button' className='badge rounded-pill bg-danger'>+</button>
+            <button onClick={()=>{add("-")}} id='button' className='badge rounded-pill bg-danger'>-</button>
+            <button onClick={()=>{add("x")}} id='button' className='badge rounded-pill bg-danger'>x</button>
+            <button onClick={()=>{add("/")}} id='button' className='badge rounded-pill bg-danger'>/</button>
         </div>
-            <button onClick={evaluate} id='sum' className='/'>=</button>
+            <button onClick={evaluate} id='sum' className='badge rounded-pill bg-success'>=</button>
         </div>
 
      </div>
+     <nav className="navbar_navbar-light_bg-light" >
+  <div className="container-fluid">
+    <span className="navbar-text">
+      All write reserved | created by kal dax
+    </span>
+  </div>
+</nav>
+</div>
+
      
     );
 }
