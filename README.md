@@ -1,6 +1,6 @@
 
 
-# this is an open sorce geez calculator that will allow you calculate a numbers with a geez langueage which is former ethiopian language.
+# This is an open source geez calculator that will allow you to calculate numbers with a geez language, which is the former Ethiopian language.
 ### the most challenging part is the geez language does not have a number called 0 which will make you think a litle bit to achive 100% working calculator. 
 #### if you would like to contribute i am curious to see what futures will you add.
 #### thank you!
