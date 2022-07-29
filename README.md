@@ -1,12 +1,12 @@
 
 
-# this is an open sorce geez calculator that will allow you calculate a numbers with a geez langueage which is former ethiopian language
+# This is an open source geez calculator that will allow you to calculate numbers with a geez language, which is the former Ethiopian language.
 ### the most challenging part is the geez language does not have a number called 0 which will make you think a litle bit to achive 100% working calculator. 
 #### if you would like to contribute i am curious to see what futures will you add.
 #### thank you!
 
-
-#### Getting Started with Create React App
+### preview https://geezcalculator.netlify.app
+#### Getting Started with Create React App.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -61,7 +61,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/c
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-##### Making a Progressive Web App
+##### Making a Progressive Web App.
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
