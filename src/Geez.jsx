@@ -1,6 +1,7 @@
-import React, { Component ,useEffect,useState} from 'react';
-import './index.css'
-import {GeezNumber,Calculator,GeezEngine} from './geez-number'
+import React, { useState} from 'react';
+import './index.css';
+import {GeezNumber,Calculator,GeezEngine} from './geez-number';
+
 
 function Geez (){
     const [operand,setOperand]=useState("");
@@ -34,129 +35,129 @@ function Geez (){
 
 
 
-function a (num){
-    array.push(num)
-    console.log(array)
+// function a (num){
+//     array.push(num)
+//     console.log(array)
    
-}
+// }
 function add (num){
     
     if (num===1){
         screen("፩")
         
     }
-    else if (num==2){
+    else if (num===2){
             
             screen('፪')       
             
         }
-        else if (num==3){
+        else if (num===3){
             
             
             screen('፫')
         }
-        else if (num==4){
+        else if (num===4){
 
             
             
             screen('፬')
         }
-        else if (num==5){
+        else if (num===5){
             
             screen('፭')
             
             
         }
-        else if (num==6){
+        else if (num===6){
             screen('፮')
             
             
         }
-        else if (num==7){
+        else if (num===7){
             screen('፯')
             
             
         }
-        else if (num==8){
+        else if (num===8){
             screen('፰')
             
 
         }
-        else if (num==9){
+        else if (num===9){
             screen('፱')
             
 
 
                
         }
-        else if (num==10){
+        else if (num===10){
             screen('፲')
             
             
             
         }
-        else if (num==20){
+        else if (num===20){
             screen('፳')
             
             
             
         }
-        else if (num==30){
+        else if (num===30){
             
             screen('፴')
          
         }
-        else if (num==40){
+        else if (num===40){
             screen('፵')
             
             
         }
-        else if (num==50){
+        else if (num===50){
             screen('፶')
            
             
             
         }
-        else if (num==60){
+        else if (num===60){
             screen('፷')
            
         }
-        else if (num==70){
+        else if (num===70){
             screen('፸')
            
         }
-        else if (num==80){
+        else if (num===80){
             screen('፹')
         }
-        else if (num==90){
+        else if (num===90){
             screen('፺')
            
         }
-        else if (num==100){
+        else if (num===100){
             screen('፻')
          
         }
-        else if (num==1000){
+        else if (num===1000){
 
             screen('፲፻')
            
           
         }
-        else if (num=="+"){
+        else if (num==="+"){
             screen('+')
            
            
         }
-        else if (num=="-"){
+        else if (num==="-"){
             screen('-')
             
         
         }
-        else if (num=="x"){
+        else if (num==="x"){
             screen('x')
             
         }
-        else if (num=="/"){
+        else if (num==="/"){
             screen('/')
            
         }
@@ -168,8 +169,8 @@ function add (num){
         setOperand2('')
         setOperand3('')
     }
-    let prev=0
-    let next=0
+    // let prev=0
+    // let next=0
     const arrayGEEZ=['፩','፪','፫','፬','፭','፮','፯','፰','፱','፲','፲፩','፲፪','፲፫','፲፬','፲፭','፲፮','፲፯','፲፰','፲፱','፳','፳፩','፳፪','፳፫','፳፬','፳፭','፳፮','፳፯','፳፰','፳፱','፴','፴፩','፴፪','፴፫','፴፬','፴፭','፴፮','፴፯','፴፰','፴፱','፵','፵፩','፵፪','፵፫','፵፬','፵፭','፵፮','፵፯','፵፰','፵፱','፶','፶፩','፶፪','፶፫','፶፬','፶፭','፶፮','፶፯','፶፰','፶፱'
     ,'፷','፷፩','፷፪','፷፫','፷፬',]
     
@@ -210,6 +211,7 @@ function add (num){
             
             computation=Calculator.divide(prev, next).toGeez();
             break;
+            default:
 
     }
     console.log(computation)
@@ -227,13 +229,22 @@ function add (num){
 <div className='bg'>
 <nav className="navbar_navbar-light_bg-light" >
   <div className="container-fluid">
-    <span className="navbar-text">
-      GEEZ Calculator
-    </span>
+    
+  
+<img src="./image/logo.png" alt="Person" width="96" height="96"/>
+
+  ALAB TENADEG
+
+    
   </div>
 </nav>
+<div className='grid'>
+<div className='contact'>
+    <p>this is an open sorce geez <br></br> calculator that will allow you <br></br>calculate a numbers with a geez <br></br> langueage which is former ethiopian language</p>
+    <button>Follow Me</button>
+</div>
 
-    <div id='GeezCalculator' className='badge rectangle-pill bg-Secondary'>
+<div id='GeezCalculator' className='badge rectangle-pill bg-Secondary'>
     
         <div className='navBar'>
             
@@ -280,8 +291,9 @@ function add (num){
         </div>
 
      </div>
+     </div>
      <nav className="navbar_navbar-light_bg-light" >
-  <div className="container-fluid">
+  <div className="container-fluidd">
     <span className="navbar-text">
       All write reserved | created by kal dax
     </span>

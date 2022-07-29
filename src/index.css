@@ -1,20 +1,73 @@
-.back{
-    background-color: rgb(53, 75, 75);
+.container-fluid{
+background-image: url("../src/image/Ellipse\ 1.png");
+background-repeat:no-repeat;
+
+ 
+  position:top;
+  
+  width: 2362px;
+  height: 230px;
+ 
+  text-align: left;
+  color: aliceblue;
+  z-index: 2;
+font-size: xx-large;
+
+
+
+}
+.grid:after{
+    content: "";
+   display: table;
+  
+   clear: both;
+   
+  
+}
+.contact{
+    float: left;
+    
+    font-size: large;
+    color: aliceblue;
+    
+    margin-top: 100px;
+}
+.bg{
+ 
+    /* background-image: url('../src/image/1658682554668.jpg'); */
+    background-image: url('../src/image/ec2261a7d6bd3dc4055dbad23dc8cc4e.jpg');
+    background-size: 145%;
+    background-position: 70%,30%;
+    background-attachment: fixed;
+    overflow: hidden;
     
    
 }
 #GeezCalculator{
+    float: left;
     text-align: center;
-    background-color: rgb(36, 32, 32);
+    /* background-color: rgb(36, 32, 32); */
+    background-image: url('../src/image/ec2261a7d6bd3dc4055dbad23dc8cc4e.jpg');
+    /* background-attachment: fixed; */
+    border: 10px solid rgb(54, 39, 49);
+    border-radius: 25px;
+
+    background-position: center;
+    background-size: 500%;
+    position: top;
     width: 50%;
-    margin-top: 5PX;
-    margin-left: 24%;
+    margin-top: 0px;
+   margin-left: 70px;
+
+    
  
 }
+
 .navBar{
   
     display:grid;
     grid-template-columns: 1fr 1fr;
+   
 }
 #AC{
     width: 70px;
@@ -29,9 +82,11 @@ color: black;
 .outPut{
     background-color: rgb(208, 202, 202);
     margin: 15px;
-    width: 400PX;
+    width: 390PX;
     height: 140px;
     color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
     
 }
 .body{
@@ -41,6 +96,7 @@ color: black;
     gap: 2px;
     padding: 3px;
     margin-top: 0px;
+    
 }
 .numPad{
     margin-top: -70px;
@@ -80,6 +136,7 @@ color: black;
     font-weight: bolder;
 font-family: 'Courier New', Courier, monospace;
 margin: 0%;
+padding-right: 7%;
 
 }
 .cerrentOperand{
@@ -87,15 +144,28 @@ margin: 0%;
     font-size: 40px;
 font-family: 'Courier New', Courier, monospace;
 margin: 0%;
+padding-right: 7%;
 font-weight: bolder;
 }
 .navbar_navbar-light_bg-light{
- background-color: black;
- height: 100px;
+ /* background-color: black; */
+ /* background-image: url(../src/image/Color\ Fill\ 4.png);
+ background-size: 100%;
+ background-position: 0px,100px;
+height: 100px;
  text-align: center;
  color: aliceblue;
- font-size: 50px;
+ font-size: 50px; */
+ 
 }
-.bg{
-    background-color: rgb(22, 20, 20);
-}
+
+/* .Rectangle_2 {
+    background-image: url("Rectangle 2.png");
+    position: absolute;
+    left: -82px;
+    top: -51px;
+    width: 1772px;
+    height: 2551px;
+    z-index: 6;
+  } */
+
