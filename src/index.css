@@ -29,8 +29,10 @@ font-size: xx-large;
     
     font-size: large;
     color: aliceblue;
+    text-align: center;
     
     margin-top: 200px auto;
+    margin-left: 10px;
     width: 30rem;
     height: 20rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
