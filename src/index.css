@@ -1,5 +1,5 @@
 .container-fluid{
-background-image: url("../src/image/Ellipse\ 1.png");
+background-image: url("../public/image/Ellipse\ 1.png");
 background-repeat:no-repeat;
 
  
@@ -28,7 +28,7 @@ font-size: xx-large;
 .bg{
  
     /* background-image: url('../src/image/1658682554668.jpg'); */
-    background-image: url('../src/image/ec2261a7d6bd3dc4055dbad23dc8cc4e.png');
+    background-image: url('../public/image/ec2261a7d6bd3dc4055dbad23dc8cc4e.png');
     background-size: 100%;
     background-position: 70%,30%;
     background-attachment: fixed;
@@ -40,7 +40,7 @@ font-size: xx-large;
     float: left;
     text-align: center;
     /* background-color: rgb(36, 32, 32); */
-    background-image: url('../src/image/ec2261a7d6bd3dc4055dbad23dc8cc4e.png');
+    background-image: url('../public/image/ec2261a7d6bd3dc4055dbad23dc8cc4e.png');
     /* background-attachment: fixed; */
     border: 10px solid rgb(54, 39, 49);
     border-radius: 25px;
@@ -268,4 +268,6 @@ height: 100px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     background-color: rgb(54, 39, 49);
   }
-  
+.navbar-text{
+color: white;
+}
