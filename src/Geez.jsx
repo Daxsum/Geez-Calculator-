@@ -16,7 +16,11 @@ function Geez (){
             setOperand(value);
             
            console.log(operand)  
-        }else if (operand2.length===0){
+        }else if (operand2.length ===0 && value !== 'x'&& value !== '/' && value !== '+' && value !== '-' ){
+            setOperand(operand+value)
+        }
+        
+        else if (operand2.length===0){
             setOperand2(value);
     
             console.log(operand2)  
@@ -231,17 +235,30 @@ function add (num){
   <div className="container-fluid">
     
   
-<img src="./image/logo.png" alt="Person" width="96" height="96"/>
+<img src='./image/logo.png' alt="logo" width="96" height="96"/>
 
-  ALAB TENADEG
+  
 
     
   </div>
 </nav>
 <div className='grid'>
-<div className='contact'>
-    <p>this is an open sorce geez <br></br> calculator that will allow you <br></br>calculate a numbers with a geez <br></br> langueage which is former ethiopian language</p>
-    <button>Follow Me</button>
+<div className='contact ' >
+   
+
+
+    <div class="scrollbar scrollbar-primary">
+  <div class="force-overflow">
+
+  <ul ><h3>GEEZ CALCULATOR</h3>
+    <li className='paragraph'>This is an open sorce geez calculator that will allow you 
+       calculate a numbers with a geez langueage which is  former
+       ethiopian language.</li><li className='paragraph'>one of the most challenging part that i faced to make this project is the geez language does not have a number called 0 which will make you think a litle bit to achive 100% working calculator.</li></ul>
+      <ul ><li className='paragraph'>if you would like to contribute on this wonderful project, i am curious to see what futures will you add. here is the github repository link:<a href='https://github.com/Daxsum/Geez-Calculator-' target='_blank'> Click Here</a></li></ul>
+    <a href='https://www.linkedin.com/in/kalab-tenadeg-840a49217/' target='_blank'><button  className='badge rounded-pill bg-primary'>Contact Me</button></a>
+  </div>
+</div>
+
 </div>
 
 <div id='GeezCalculator' className='badge rectangle-pill bg-Secondary'>
