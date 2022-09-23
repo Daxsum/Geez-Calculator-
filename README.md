@@ -5,7 +5,6 @@
 #### if you would like to contribute i am curious to see what futures will you add.
 #### thank you!
 
-
 ### preview https://geezcalculator.netlify.app
 #### Getting Started with Create React App!
 
