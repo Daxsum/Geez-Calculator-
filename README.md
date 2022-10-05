@@ -3,7 +3,7 @@
 # This is an open source geez calculator that will allow you to calculate numbers with a geez language, which is the former Ethiopian language.
 ### the most challenging part is the geez language does not have a number called 0 which will make you think a litle bit to achive 100% working calculator. 
 #### if you would like to contribute i am curious to see what futures will you add.
-#### thank you
+#### thank you.
 
 ### preview https://geezcalculator.netlify.app
 #### Getting Started with Create React App!
