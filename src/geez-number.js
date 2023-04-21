@@ -74,6 +74,8 @@ var GeezEngine = /** @class */ (function () {
     };
     return GeezEngine;
 }());
+
+
 var GeezNumber = /** @class */ (function (_super) {
     __extends(GeezNumber, _super);
     function GeezNumber(_number) {
