@@ -11,7 +11,8 @@ function Geez (){
     
     
     
-    function screen (value){
+    function screen (value)
+    {
         if (operand.length===0){
             setOperand(value);
             
