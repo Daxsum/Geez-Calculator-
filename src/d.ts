@@ -20,6 +20,7 @@ class GeezEngine {
         80: "፹",
         90: "፺",
     };
+    //adding
 
     convertToGeez(num: number): string {
         // step 1
